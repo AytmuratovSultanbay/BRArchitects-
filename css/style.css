@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    width: 96%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 36px;
+    box-shadow: 2px 3px 5px 0px #0000003f;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 14px 26px;
+    font-size: 14px;
+    letter-spacing: 3.5px;
+    font-family: Verdana, sans-serif;
+    color: #000;
+}
+
+nav a:hover {
+    background: #0000003f;
+}
+
+#home {
+    background-image: url(../images/images_3.jpg);
+    background-size: 87%;
+    min-height: 100vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+#home .image_bg {
+    position: absolute;
+    background: #00000070;
+    width: 87%;
+    height: 99%;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: "Arial";
+    font-weight: 400;
+    color: #fff;
+    z-index: 2;
+    letter-spacing: 3.5px;
+}
+
+h1 b {
+    background: #000000a8;
+    padding: 8px 16px;
+}
+
+#projects {
+    margin: 90px 120px;
+}
+
+section .title{
+    font-size: 22px;
+    color: #000;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid #00000033;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+
+#projects .cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.cards .card {
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: verdana;
+    
+}
