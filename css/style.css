@@ -72,7 +72,7 @@ h1 b {
     margin: 90px 120px;
 }
 
-section .title{
+section .title {
     font-size: 22px;
     color: #000;
     letter-spacing: 1.5px;
@@ -105,14 +105,17 @@ section .title{
     font-size: 15px;
     font-family: verdana;
 }
-#about{
+
+#about {
     margin: 90px 120px;
 }
-#about .doe{
-display: flex;
-gap: 25px;
+
+#about .doe {
+    display: flex;
+    gap: 25px;
 }
-#about .title{
+
+#about .title {
     font-size: 25px;
     color: #000;
     letter-spacing: 1.3px;
@@ -120,37 +123,44 @@ gap: 25px;
     margin-bottom: 40px;
     padding-bottom: 30px;
 }
-#about p{
+
+#about p {
     font-size: 20px;
 }
-.john img{
-width: 310px;
-filter: grayscale(1)
+
+.john img {
+    width: 310px;
+    filter: grayscale(1)
 }
-.john{
+
+.john {
     width: 300px;
     gap: 15px;
 }
-.john h1{
+
+.john h1 {
     color: #000;
     font-size: 27px;
     letter-spacing: 0;
     font-family: verdana;
 }
-.john h2{
+
+.john h2 {
     font-size: 15px;
     color: #00000083;
     font-family: verdana;
     font-weight: 500;
 }
-.john h3{
- font-family: verdana;
- letter-spacing: 0;
- font-size: 15px;
- color: #000000db;
- font-weight: 500;
+
+.john h3 {
+    font-family: verdana;
+    letter-spacing: 0;
+    font-size: 15px;
+    color: #000000db;
+    font-weight: 500;
 }
-.john a{
+
+.john a {
     display: block;
     padding: 8px;
     font-size: 16px;
@@ -160,4 +170,37 @@ filter: grayscale(1)
     text-align: center;
     width: 100%;
     font-family: verdana;
+}
+
+#contact {
+    margin: 90px 120px;
+}
+
+#contact .title {
+    font-size: 25px;
+    color: #000;
+    letter-spacing: 1.3px;
+    border-bottom: 1px solid #00000033;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+
+.input input {
+    background-color: #000000e9;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+#contact button {
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: #000000e9;
+    color: #ffffffe6;
+    font-size: 20px;
+}
+
+.photo {;
+    padding:67px;
+    
 }
