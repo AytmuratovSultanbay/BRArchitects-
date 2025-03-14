@@ -199,8 +199,27 @@ section .title {
     color: #ffffffe6;
     font-size: 20px;
 }
-
-.photo {;
-    padding:67px;
-    
+#img{
+    margin: 90px 120px;
 }
+#img .title{
+    font-size: 25px;
+    color: #000;
+    letter-spacing: 1.3px;
+    border-bottom: 1px solid #00000033;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+#img img{
+width: 100%;
+}
+footer{
+    background-color: #141313;
+    color: #fff;
+    text-align: center;
+    height: 20px;
+    padding: 30px;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+}
+
