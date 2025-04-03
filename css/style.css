@@ -37,8 +37,7 @@ nav a:hover {
 }
 
 #home {
-    background-image: url(../images/1692209768.jpg);
-    background-size: 87%;
+    background-image: url(../images/Hakimyat.jpg);
     min-height: 100vh;
     background-position: center;
     display: flex;
@@ -222,4 +221,12 @@ footer{
     font-size: 16px;
     font-family: "Poppins", serif;
 }
-
+#link{
+    margin: 90px 120px;
+}
+#imgs{
+    margin: 90px 120px;
+}
+#imgs img{
+  width: 200px;
+}
