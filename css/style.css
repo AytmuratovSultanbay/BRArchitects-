@@ -198,10 +198,12 @@ section .title {
     color: #ffffffe6;
     font-size: 20px;
 }
-#img{
+
+#img {
     margin: 90px 120px;
 }
-#img .title{
+
+#img .title {
     font-size: 25px;
     color: #000;
     letter-spacing: 1.3px;
@@ -209,10 +211,12 @@ section .title {
     margin-bottom: 40px;
     padding-bottom: 30px;
 }
-#img img{
-width: 100%;
+
+#img img {
+    width: 100%;
 }
-footer{
+
+footer {
     background-color: #141313;
     color: #fff;
     text-align: center;
@@ -221,12 +225,15 @@ footer{
     font-size: 16px;
     font-family: "Poppins", serif;
 }
-#link{
+
+#link {
     margin: 90px 120px;
 }
-#imgs{
+
+#imgs {
     margin: 90px 120px;
 }
-#imgs img{
-  width: 200px;
+
+#imgs img {
+    width: 200px;
 }
