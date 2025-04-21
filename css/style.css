@@ -37,7 +37,7 @@ nav a:hover {
 }
 
 #home {
-    background-image: url(../images/Hakimyat.jpg);
+    background-image: url(../images/main2.jpg);
     min-height: 100vh;
     background-position: center;
     display: flex;
@@ -111,7 +111,9 @@ section .title {
 
 #about .doe {
     display: flex;
-    gap: 25px;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 60px;
 }
 
 #about .title {
@@ -134,7 +136,7 @@ section .title {
 
 .john {
     width: 300px;
-    gap: 15px;
+    gap: 5px;
 }
 
 .john h1 {
@@ -189,6 +191,7 @@ section .title {
     width: 100%;
     padding: 10px;
     margin: 10px;
+    color: #fff;
 }
 
 #contact button {
