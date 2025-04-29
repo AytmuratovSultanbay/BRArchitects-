@@ -14,7 +14,6 @@ nav {
     box-shadow: 2px 3px 5px 0px #0000003f;
     z-index: 10;
 }
-
 nav ul {
     display: flex;
 }
@@ -72,6 +71,8 @@ h1 b {
 }
 
 section .title {
+   display: flex;
+   gap: 35%;
     font-size: 22px;
     color: #000;
     letter-spacing: 1.5px;
@@ -79,7 +80,26 @@ section .title {
     margin-bottom: 40px;
     padding-bottom: 30px;
 }
+.title h1{
+    color: #000;
+}
 
+.title ul{
+    color: #000;
+    display: flex;
+    gap: 100px;
+}
+.title ul li{
+    list-style: none;
+}
+.title a{
+    text-decoration: none;
+    padding: 14px 26px;
+    font-size: 19px;
+    letter-spacing: 2.8px;
+    font-family: Verdana, sans-serif;
+    color: #000;
+}
 #projects .cards {
     display: grid;
     grid-template-columns: auto auto auto auto;
