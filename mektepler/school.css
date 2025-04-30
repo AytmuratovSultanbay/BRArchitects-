@@ -12,6 +12,8 @@
 }
 .cards img{
     width: 350px;
+    border-radius: 10px;
+    
 }
 .cards .card {
     position: relative;
