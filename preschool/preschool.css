@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#projects{
+    margin: 90px 120px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+}
+.cards img{
+    width: 350px;
+    border-radius: 10px;
+    
+}
+.cards .card {
+    position: relative;
+}
+.card p {
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: verdana;
+}
