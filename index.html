@@ -38,7 +38,7 @@
     <section id="projects">
         <div class="title">
 
-            <h1>Joybarlar</h1>
+            <h1>Imaratlar</h1>
             <ul>
                 <li>
                     <a href="./mektepler/school.html" target="_blank">Mektepler</a>
@@ -88,12 +88,19 @@
     </section>
     <section id="about">
 
-        <h1 class="title">Haqida</h1>
-        <p>Qoraqalpog'iston Respublikasi markaziy tumanlaridan biri Qonliko'l A-380 «Guzar-Buxaro-Nukus-Beyneo'»
-            avtomagistral yo'li bo'yida joylashgan. Qonliko'l tumani dastlab Qungrad tumanining bo'limi bo'lib, 1970 yil
-            7 dekabrda «Leninabad» tumani bo'lib tashkillashtirilgan. Qoraqalpog'iston Respublikasi Jo'qorg'i Soveti
-            Prezidumining Farmoni asosida 1993 yil 9 yanvardan boshlab «Qonliko'l» tumani bo'lib o'zgartilgan. Qonliko'l
-            xududida qoraqalpoq xalqi 1746 yillari joylasha boshlagan.
+        <div class="search-section">
+            <h3>Izlew</h3>
+            <div class="search-box">
+              <input type="text" placeholder="Search Here" />
+              <button><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        <h1 class="title">Bashshilar</h1>
+        <p>Qaraqalpaqstan Respublikası oraylıq rayonlarınan biri Qanlıqo'l A-380 «Gúzar -Buxaro-Nókis-Beyneo'»
+            avtomagistral jolı boyında jaylasqan. Qanlıqo'l rayonı daslep Qungrad rayonınıń bólimi bolıp, 1970 jıl 
+            7 dekabrde «Leninabad» rayonı bolıp shólkemlestirilgen. Qaraqalpaqstan Respublikası Joqarǵi Soveti
+            Prezidumining Pármanı tiykarında 1993 jıl 9 yanvardan baslap «Qanlıqo'l» rayonı bolıp ózgertilgan. Qanlıqo'l
+            tapda qaraqalpaq xalqi 1746 jılları jaylawa baslaǵan.
         </p>
         <div class="doe">
             <div class="john">
@@ -118,16 +125,16 @@
                 <a href="https://t.me/aytmuratovsu" target="_blank">Baylanis</a>
             </div>
             <div class="john">
-                <img src="./images/Venyra apa.jpg" alt="jpg">
-                <h1>V.Turdimuratova</h1>
-                <h2>Venyra Turdimuratova</h2>
-                <h3>Qanlikol transport ham servis texnikomi Derektori </h3>
+                <img src="./images/png uzer.png" alt="jpg">
+                <h1>T.Bekniyzov</h1>
+                <h2>Tolibay & Bekniyzov</h2>
+                <h3>2-sanli mektep derektori </h3>
                 <a href="" target="_blank">Baylanis</a>
             </div>
         </div>
     </section>
     <section id="contact">
-        <h1 class="title">Joybar</h1>
+        <h1 class="title">Usinis</h1>
         <form class="input">
             <h2>Sistemaǵa kirisiw</h2>
             <div class="input">
@@ -139,17 +146,18 @@
                 </div>
                 <div class="label2">
                     <label for="subject"></label>
-                    <input type="text" id="subject" placeholder="Tema:"><br>
+                    <input type="text" id="message" placeholder="Tema:"><br>
                     <label for="comment"></label>
                     <input type="text" id="comment" placeholder="Usinis">
                 </div>
             </div>
         </form>
-        <button type="submit">Xabar jiberiw</button>
+        <button type="submit" onclick="sendtelegram()">Xabar jiberiw</button>
     </section>
     <footer>
         &copy;Powered by Sultanbay
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
