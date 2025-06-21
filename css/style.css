@@ -3,6 +3,28 @@ body {
     padding: 0;
 }
 
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .loader:before , .loader:after{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+  }
+  .loader:after {
+    box-shadow: 0 2px 0 #FF3D00 inset;
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {  transform: rotate(0)}
+    100% { transform: rotate(360deg)}
+  }
 nav {
     position: fixed;
     width: 96%;
@@ -14,6 +36,7 @@ nav {
     box-shadow: 2px 3px 5px 0px #0000003f;
     z-index: 10;
 }
+
 nav ul {
     display: flex;
 }
@@ -35,6 +58,39 @@ nav a:hover {
     background: #0000003f;
 }
 
+.search-section,
+.contact-section {
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    width: 600px;
+    height: 50px;
+}
+
+.search-box {
+    display: flex;
+    margin-top: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
 #home {
     background-image: url(../images/Hakimyat.jpg);
     min-height: 100vh;
@@ -48,8 +104,8 @@ nav a:hover {
 #home .image_bg {
     position: absolute;
     background: #00000070;
-    width: 87%;
-    height: 99%;
+    width: 70%;
+    height: 90%;
 }
 
 h1 {
@@ -71,8 +127,8 @@ h1 b {
 }
 
 section .title {
-   display: flex;
-   gap: 35%;
+    display: flex;
+    gap: 35%;
     font-size: 22px;
     color: #000;
     letter-spacing: 1.5px;
@@ -80,19 +136,22 @@ section .title {
     margin-bottom: 40px;
     padding-bottom: 30px;
 }
-.title h1{
+
+.title h1 {
     color: #000;
 }
 
-.title ul{
-    color:#000;
+.title ul {
+    color: #000;
     display: flex;
     gap: 100px;
 }
-.title ul li{
+
+.title ul li {
     list-style: none;
 }
-.title a{
+
+.title a {
     text-decoration: none;
     padding: 14px 26px;
     font-size: 19px;
@@ -100,6 +159,7 @@ section .title {
     font-family: Verdana, sans-serif;
     color: #000;
 }
+
 #projects .cards {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -125,6 +185,18 @@ section .title {
     font-family: verdana;
 }
 
+#projects .cards .card img {
+    transition: transform 0.3s ease;
+}
+
+#projects .cards .card img:hover {
+    transform: scale(1.05);
+}
+
+#projects .cards .card {
+    overflow: hidden;
+}
+
 #about {
     margin: 90px 120px;
     color: #000;
@@ -135,6 +207,18 @@ section .title {
     justify-content: center;
     gap: 45px;
     margin-top: 60px;
+}
+
+#about .doe .john img {
+    transition: transform 0.3s ease;
+}
+
+#about .doe .john img:hover {
+    transform: scale(1.05);
+}
+
+#about .doe .john {
+    overflow: hidden;
 }
 
 #about .title {
@@ -187,15 +271,34 @@ section .title {
     padding: 8px;
     font-size: 16px;
     text-decoration: none;
-    background-color: #f1f1f1;
+    background-color: white;
     color: #000;
     text-align: center;
     width: 100%;
     font-family: verdana;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {
+        background-color: black;
+        color: #fff;
+    }
+
+    to {
+        background-color: wheat;
+        color: #000;
+    }
+
+    to {
+        background-color: #fff;
+        color: #000;
+    }
 }
 
 #contact {
     margin: 90px 120px;
+
 }
 
 #contact .title {
@@ -207,24 +310,62 @@ section .title {
     padding-bottom: 30px;
 }
 
+#contact .content {
+    display: flex;
+    justify-content: center;
+
+}
+
+#contact form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px 100%;
+}
+
+#contact form div {
+    display: flex;
+    flex-direction: column;
+    width: 170%;
+}
+
+#contact .tel {
+    display: flex;
+}
+
 .input input {
-    background-color: #000000e9;
-    width: 40%;
+    background-color: #fff;
+    width: 20%;
     padding: 10px;
     margin: 10px;
-    color: #fff;
+    color: #000;
 }
-.label1{
+
+.label1 {
     display: flex;
 }
-.label2{
+
+.label2 {
     display: flex;
 }
+
+#contact .input .label3 textarea {
+    margin: 0 10px;
+    font-size: 15px;
+    outline: none;
+    resize: vertical;
+    background: transparent;
+    border: 1px solid #000;
+    font-family: "Poppins", serif;
+    color: #000;
+    height: 100%;
+    width: 50%;
+}
+
 #contact button {
     margin: 20px;
     padding: 10px 15px;
     background-color: #000000e9;
-    color:#fff;
+    color: #fff;
     font-size: 20px;
 }
 
@@ -234,7 +375,7 @@ section .title {
 
 #img .title {
     font-size: 25px;
-    color:#000;
+    color: #000;
     letter-spacing: 1.3px;
     border-bottom: 1px solid #00000033;
     margin-bottom: 40px;
@@ -266,44 +407,9 @@ footer {
 #imgs img {
     width: 200px;
 }
-.search-section, .contact-section {
-    margin: 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-family: Arial, sans-serif;
-  }
-  
-  h3 {
-    color: #000;
-    border-bottom: 2px solid #000;
-    display: inline-block;
-    padding-bottom: 5px;
-  }
-  
-  .search-box {
-    display: flex;
-    margin-top: 10px;
-  }
-  
-  .search-box input {
-    flex: 1;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-  }
-  
-  .search-box button {
-    padding: 10px 15px;
-    background-color:#000;
-    color: white;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-  }
-  
-  .contact-info p {
+
+
+.contact-info p {
     margin: 5px 0;
     font-size: 14px;
-  }
+}

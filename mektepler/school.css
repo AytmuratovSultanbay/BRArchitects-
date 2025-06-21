@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+header{
+    text-align: center;
+    
+}
 #projects{
     margin: 90px 120px;
 }
@@ -9,11 +13,11 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 30px;
+
 }
 .cards img{
     width: 350px;
     border-radius: 10px;
-    
 }
 .cards .card {
     position: relative;

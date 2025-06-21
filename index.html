@@ -7,19 +7,28 @@
     <title> QR Arxitektorlar</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
+    <span class="loader"></span>
     <nav>
         <a href="#home" class="logo">
             <b> QR</b> Kanlikul Building
         </a>
+        <div class="search-section">
+            
+            <div class="search-box">
+                <input type="text" placeholder="Izlew ushin " />
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        
         <ul>
             <li>
-                <a href="#projects">Imaratlar </a>
+                <a href="#projects">Imaratlar</a>
             </li>
             <li>
                 <a href="#about">Bashshilar</a>
@@ -28,6 +37,7 @@
                 <a href="#contact">Usinis</a>
             </li>
         </ul>
+
     </nav>
     <section id="home">
         <div class="image_bg"></div>
@@ -78,26 +88,19 @@
             </div>
             <div class="card">
                 <img src="./images/Jaslar seyili.jpg" alt="">
-                <p>jaslar seyili</p>
+                <p>Jaslar seyili</p>
             </div>
             <div class="card">
                 <img src="./images/sportschool.jpg" alt="">
-                <p>sport mekteb</p>
+                <p>Sport mekteb</p>
             </div>
         </div>
     </section>
     <section id="about">
 
-        <div class="search-section">
-            <h3>Izlew</h3>
-            <div class="search-box">
-              <input type="text" placeholder="Search Here" />
-              <button><i class="fa fa-search"></i></button>
-            </div>
-          </div>
         <h1 class="title">Bashshilar</h1>
         <p>Qaraqalpaqstan Respublikası oraylıq rayonlarınan biri Qanlıqo'l A-380 «Gúzar -Buxaro-Nókis-Beyneo'»
-            avtomagistral jolı boyında jaylasqan. Qanlıqo'l rayonı daslep Qungrad rayonınıń bólimi bolıp, 1970 jıl 
+            avtomagistral jolı boyında jaylasqan. Qanlıqo'l rayonı daslep Qungrad rayonınıń bólimi bolıp, 1970 jıl
             7 dekabrde «Leninabad» rayonı bolıp shólkemlestirilgen. Qaraqalpaqstan Respublikası Joqarǵi Soveti
             Prezidumining Pármanı tiykarında 1993 jıl 9 yanvardan baslap «Qanlıqo'l» rayonı bolıp ózgertilgan. Qanlıqo'l
             tapda qaraqalpaq xalqi 1746 jılları jaylawa baslaǵan.
@@ -108,7 +111,7 @@
                 <h1>B.Sultanov</h1>
                 <h2>Baxram & Sultanov</h2>
                 <h3> Qanlikol Rayoni Hakimi</h3>
-                <a href="https://t.me/aytmuratovsu" target="_blank">Baylanis</a>
+                <a href="https://t.me/aytmuratovsu" target="_self">Baylanis</a>
             </div>
             <div class="john">
                 <img src="./images/Rustemaga.jpg" alt="jpg">
@@ -121,7 +124,7 @@
                 <img src="./images/temur aga.jpg" alt="jpg">
                 <h1>T.Muratbayov</h1>
                 <h2>Timur & Muratbayov</h2>
-                <h3>Qanlikol Rayoni Jaslar isler agentligi basligi</h3>
+                <h3>Jaslar isler agentligi basligi</h3>
                 <a href="https://t.me/aytmuratovsu" target="_blank">Baylanis</a>
             </div>
             <div class="john">
@@ -135,23 +138,49 @@
     </section>
     <section id="contact">
         <h1 class="title">Usinis</h1>
-        <form class="input">
-            <h2>Sistemaǵa kirisiw</h2>
-            <div class="input">
-                <div class="label1">
-                    <label for="name"></label>
-                    <input type="text" id="name" placeholder="Ati/Pamilyasi"><br>
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="Elektiron poshta"> <br>
+        <div class="content">
+            <form>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname">
                 </div>
-                <div class="label2">
-                    <label for="subject"></label>
-                    <input type="text" id="message" placeholder="Tema:"><br>
-                    <label for="comment"></label>
-                    <input type="text" id="comment" placeholder="Usinis">
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname">
                 </div>
-            </div>
-        </form>
+                <div>
+                    <label for="pnumber">Phone Number</label>
+                    <label for="pnumber">+998</label>
+                    <input type="tel" id="pnumber" autocomplete="off" required="" pattern="[0-9]{9}">
+                </div>
+                <div>
+                    <label for="email">Gmail</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="description">
+                    <label for="description">Description</label>
+                    <textarea id="description"></textarea>
+                </div>
+                <!-- <div class="label1">
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Ati"><br>
+                        <label for="email"></label>
+                        <input type="text" id="email" placeholder="Familyasi"> <br>
+                    </div>
+                    <div class="label2">
+                        <label for="subject"></label>
+                        <input type="tel" id="subject" placeholder="+998 93 913 05 08"><br>
+                        <label for="comment"></label>
+                        <input type="email" id="comment" placeholder="ajtmuratovsultanbaj@gmail.com">
+                    </div>
+                    <div class="label3">
+                        <textarea name="advice" id="Usinis" placeholder="Usinis"></textarea>
+    
+                    </div>
+                 -->
+            </form>
+
+        </div>
         <button type="submit" onclick="sendtelegram()">Xabar jiberiw</button>
     </section>
     <footer>
