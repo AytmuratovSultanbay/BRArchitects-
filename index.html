@@ -18,13 +18,12 @@
         <a href="#home" class="logo">
             <b> QR</b> Kanlikul Building
         </a>
-        <div class="search-section">
-            
-            <div class="search-box">
-                <input type="text" placeholder="Izlew ushin " />
-                <button><i class="fa fa-search"></i></button>
+        <div class="search-container">
+            <button onclick="toggleSearch()" class="search-icon">🔍 Qidiruv</button>
+            <div id="searchBoxWrapper">
+              <input type="text" id="searchInput" placeholder="Qidiruv..." class="search-box" onkeypress="handleKeyPress(event)">
             </div>
-        </div>
+          </div>
         
         <ul>
             <li>

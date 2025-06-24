@@ -31,3 +31,21 @@ var sendtelegram = function() {
     document.getElementById("message").value = "";
     return false;
 };
+function toggleSearch() {
+    var box = document.getElementById("searchBoxWrapper");
+    if (box.style.display === "none" || box.style.display === "") {
+      box.style.display = "block";
+      document.getElementById("searchInput").focus();
+    } else {
+      box.style.display = "none";
+    }
+  }
+  
+  function handleKeyPress(event) {
+    if (event.key === "Enter") {
+      let query = event.target.value.trim();
+      if (query !== "") {
+        window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(query);
+      }
+    }
+  }
