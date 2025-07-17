@@ -361,39 +361,38 @@ section .title {
 
 #contact {
     margin: 90px 120px;
-
 }
-
-#contact .title {
-    font-size: 25px;
-    color: #000;
-    letter-spacing: 1.3px;
-    border-bottom: 1px solid #00000033;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
-}
-
-#contact .content {
-    display: flex;
-    justify-content: center;
-
-}
-
-#contact form {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 0px 100%;
-}
-
-#contact form div {
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-    width: 170%;
-}
-
-#contact .tel {
-    display: flex;
-}
+    gap: 15px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
 
 .input input {
     background-color: #fff;
@@ -411,26 +410,7 @@ section .title {
     display: flex;
 }
 
-#contact .input .label3 textarea {
-    margin: 0 10px;
-    font-size: 15px;
-    outline: none;
-    resize: vertical;
-    background: transparent;
-    border: 1px solid #000;
-    font-family: "Poppins", serif;
-    color: #000;
-    height: 100%;
-    width: 50%;
-}
-
 #contact button {
-    /* margin: 20px;
-    padding: 10px 15px;
-    background-color: #000000e9;
-    color: #fff;
-    font-size: 20px; */
-
     background-color: #000;
     color: white;
     border: none;
@@ -518,9 +498,5 @@ footer {
 #imgs img {
     width: 200px;
 }
+            
 
-
-.contact-info p {
-    margin: 5px 0;
-    font-size: 14px;
-}
